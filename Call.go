@@ -1,5 +1,5 @@
 //Invoke Packages
-package main
+package CallOption
 
 import (
 	"fmt"
@@ -52,10 +52,4 @@ func (p *OptInput) call() float64 {
 	C0 := math.Exp(-p.R*p.T) * (sumSlices(hT) / float64(p.I))
 
 	return C0
-}
-
-//Execute function to get price of the call option
-func main() {
-	r := OptInput{100.0, 105.0, 10.0, 0.10, 0.20, 1000000}
-	fmt.Println(r.call())
 }
