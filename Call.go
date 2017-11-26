@@ -1,7 +1,6 @@
 package Call
 
 import (
-	"fmt"
 	"math"
 	"math/rand"
 )
